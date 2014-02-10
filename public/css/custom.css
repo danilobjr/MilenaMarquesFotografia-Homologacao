@@ -2021,7 +2021,9 @@ transform: scale(1);
 	-moz-box-shadow:0 0 5px 0 rgba(0,0,0,0.4);
 	position:relative;
 	z-index:9;
-	padding:6px 0 74px 0;
+    /* CUSTOM */
+	/*padding:6px 0 74px 0;*/
+    padding:6px 0;
 }
 .collection-banner-area .caption {
 	background:url(../images/collection-text-tag.png) no-repeat left top;
