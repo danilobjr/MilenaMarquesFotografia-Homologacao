@@ -2,10 +2,10 @@
 //This tutorial introduces the Sideshow basics to the newcomer
 
 Sideshow.registerWizard({
-    name: "explicacao_novo_layout",
-    title: "Explicação das Seções do Novo Layout",
-    description: "Clique aqui para começar a apresentação",
-    estimatedTime: "10 Minutos",
+    name: "explicacao_novo_layout_index",
+    title: "Apresentação do Novo Layout - Serviços",
+    description: "Clique aqui para começar a apresentação da página 'Serviços'",
+    estimatedTime: "3 Minutos",
     affects: [
 		function(){
 			//Here we could do any checking to infer if this tutorial is eligible the current screen/context. 
@@ -18,31 +18,51 @@ Sideshow.registerWizard({
     showStepPosition: true,
     steps: [
     	{
-		    title: "More than a tour... we can do much more.",
-		    text: "Sideshow can much more than just walk users through your site/web application. Sideshow can mediate the interaction between users and your UI. Go ahead and let's see some powerful features."
+		    title: "Boas vindas",
+		    text: "Esta é uma apresentação passo a passo da página 'Home'. Todo o conteúdo visto (imagens, textos, nomes de link, etc) é meramente ilustrativo, apenas a estrutura conta. Algumas das seções são baseadas em conversas anteriores e no conteúdo do site atual (milenamarquesfotografia.com.br). Outras seções servem como sugestão. Todo o conteúdo das seções desta página é passível de mudança. \n\n A estrutura e orçamento do site está seguindo o que foi acordado anteriormente por email com Anfrísio Rocha. Caso haja necessidade alterar a estrutura, será feita uma nova análise para orçamento. \n\n Para passar para o próximo passo, basta clicar em Continuar ou Fechar (no canto direito inferior desta apresentação) se desejar parar.",
+            format: "markdown"
 		},
 		{
-		    title: "The Subject",
-		    text: "In each step of a tutorial/wizard/tour/help (you can call it the way you want =D ) you're talking about something. Sometimes you're just explaining a concept, but at the most part of time, you're explaining some visual part of a screen or a page (e.g. a form, button, div, grid and so forth). We call these visual parts subjects. A subject of a step is just an element of your page you're aiming to stand out from the rest (when user is seeing that especific step) to comment/explain something about it."
+		    title: "Propósito",
+		    text: "Esta apresentação tem por objetivo apenas demonstrar as seções da página 'Home'. Colocaremos em detaque as seções juntamente com uma breve explanação da funcionalidade. No entanto, tais funcionalidades estão incompletas, serve apenas para ter uma noção de como ficará quando o site ficar completo."
 		},
 		{
-		    title: "Masking a Subject",
-		    text: "An example could be this text: in this step, this text is the subject. As you can see, we're surrounding it with a dark mask. This make you look at the subject with no doubt where it's located. If you're curious how we make it work: for the moment, you just need to know we're not using `z-index` to pull the subject above the mask. Some tour libraries do this, we see a plenty of drawbacks in this approach. \n\n When writing a tutorial, each subject is represented by a jQuery-like/querySelectorAll-like/CSS-like selector. For this step, for instance, the subject is a `div`, and its selector is `#introducing_sideshow`, but could be any other valid selector returning the same element.\n\nP.S: for now, Sideshow only supports single subjects per step. If you define a subject selector which returns more than one element, Sideshow will throw an exception. Multiple steps will (propably) be available in future versions of Sideshow.",
-		    subject: "#introducing_sideshow",
-		    format: "markdown"
+		    title: "Topo com a Logo",
+		    text: "Topo do site e a logo com bastante destaque.",
+		    subject: ".logo-section",
+            lockSubject: true
 		},
 		{
-		    title: "You Won't lose your Rounded Corners",
-		    text: "We would never leave you without your rounded corners! =)\n\nJust see this button again, look at the corners, they're pretty masked pal!\n\nP.S: Don't blame me if the button click is not doing anything. This behavior is correct, you can't open two instances of Sideshow simultaneously. ;-)",
-		    subject: "#run_example",
-		    format: "markdown"
+		    title: "Menu Principal",
+		    text: "",
+		    subject: ".nav-bar",
+            lockSubject: true
 		},
 		{
-		    title: "Preventing Undesirable Clicks",
-		    text: "In the previous step, probably you tried to click on that button. The user shouln't be able to click in the button in that moment. Sideshow can deal with this situation easily, there's a step option `lockSubject` which preserves the mask appearance but prevents the user to interact with the subject with the mouse.\n\n**Just try to click in the button.**",
-		    subject: "#run_example",
-		    lockSubject: true,
-		    format: "markdown"
+		    title: "Banners",
+		    text: "Eles se alternam entre si automaticamente. \n\n Podem ser apenas imagens de demonstração de trabalho que não direcionam a nenhuma página do site ou podem vir a direcionar para alguma seção pré-determinada do site. \n\n Abaixo, é possível adicionar uma frase genérica para todos os banners.",
+		    subject: "#banner",
+		    format: "markdown",
+            lockSubject: true
+		},
+        {
+		    title: "Rodapé",
+		    text: "Estará dividido em 2 seções: 'Trabalhos Recentes' e 'Contate-nos'. Será repetido em todas as páginas. \n\n Veja os detalhes no próximo passo.",
+		    subject: "footer",
+            format: "markdown",
+            lockSubject: true
+		},
+		{
+		    title: "Trabalhos recentes - Rodapé",
+		    text: "Uma seção para 'Trabalhos Recentes' conterá um link com imagem. Clicando na imagem, o usuário será redirecionado para a página 'Galeria' onde serão listadas as imagens do ensaio.",
+		    subject: "#trabalhos-recentes",
+		    format: "markdown",
+            lockSubject: true
+		},
+        {
+		    title: "Contate-nos - Rodapé",
+		    text: "Conterá o endereço e alguns dados para fácil contatos.",
+		    subject: ".lower-footer"
 		},
 		{
 		    title: "Targets - Pointing to items in the subject area",
