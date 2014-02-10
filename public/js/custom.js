@@ -196,7 +196,7 @@ jQuery(document).ready(function($){
 	}
 	if($('#map_canvas').length){
   		var map;
-  		var myLatLng = new google.maps.LatLng(33.987696, -118.472242);
+  		var myLatLng = new google.maps.LatLng(-3.7203, -38.5152);
   		//Initialize MAP
   		var myOptions = {
   		  zoom: 16,
