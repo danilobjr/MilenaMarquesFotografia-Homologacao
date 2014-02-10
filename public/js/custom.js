@@ -62,7 +62,7 @@ jQuery(document).ready(function($){
 
     var alterarDestaqueMenu = function (pagina) {
         menus.removeClass('active');
-        debugger;
+        
         var setarMenuComoAtivo = function (pagina) {
             if (!pagina) {
                 menus.first().addClass('active');
