@@ -6800,3 +6800,11 @@ table th, table td {
 .blog-archives .archives-frame img {
     width: 263px;
 }
+
+.categories-page {
+    margin-bottom: 60px;
+}
+
+.categories-page .col-md-4 {
+    height: 614px;
+}

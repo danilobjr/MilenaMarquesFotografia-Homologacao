@@ -377,17 +377,10 @@
 <%-scripts%>
 
     <!-- DELETE-THIS -->
-    <!--Scripts required for Sideshow to work properly-->
-	<script src="js/sideshow-0.3.3/distr/dependencies/jazz-0.1.1.min.js"></script>
-	<script src="js/sideshow-0.3.3/distr/dependencies/pagedown-1.1.0.min.js"></script>
-	<script src="js/sideshow-0.3.3/distr/sideshow-0.3.3.debug.js"></script>
-    <!--Scripts for this page-->
-	<script src="js/sideshow-0.3.3/slideshow.config.js"></script>
-	<script src="js/sideshow-0.3.3/slideshow_steps.js"></script>
 	<script>
-     $("#runTutorial").click(function (e) {
-         Sideshow.start({ listAll: true });
-     });
+        $("#runTutorial").click(function (e) {
+            Sideshow.start({ listAll: true });
+        });
 	</script>
 
 </body>
