@@ -56,6 +56,40 @@ jQuery(document).ready(function($){
 
     $('.anoAtual').text((new Date()).getFullYear());
 
+    
+    // Menu - active
+    var menus = $('#nav li');
+
+    var alterarDestaqueMenu = function (pagina) {
+        menus.removeClass('active');
+        debugger;
+        var setarMenuComoAtivo = function (pagina) {
+            if (!pagina) {
+                menus.first().addClass('active');
+            } else {
+                menus.find('[href$="' + pagina + '"]').parent().addClass('active');
+            }
+        };
+
+        switch (pagina) {
+            case 'servicos':
+                setarMenuComoAtivo(pagina);
+                break;
+            case 'galeria':
+                setarMenuComoAtivo('servicos');
+                break;
+            case 'contato':
+                setarMenuComoAtivo(pagina);
+                break;
+            default:
+                setarMenuComoAtivo(undefined)
+        }
+    };
+
+    var paginaAtual = window.location.pathname;
+    paginaAtualSemBarra = paginaAtual.substring(1);
+    alterarDestaqueMenu(paginaAtualSemBarra);
+
 	//Bx Slider
 	if($('.bxslider').length){
 		$('.bxslider').bxSlider();
