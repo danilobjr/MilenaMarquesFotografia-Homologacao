@@ -6792,3 +6792,11 @@ table th, table td {
 	margin:0 0 30px 0;
 }
 /*Special Css End*/
+
+
+/* CUSTOM - amostras para Milena.. apagar ou reajustar depois */
+
+.blog-archives .archives-frame,
+.blog-archives .archives-frame img {
+    width: 263px;
+}
