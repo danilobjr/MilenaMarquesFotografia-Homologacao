@@ -19,7 +19,7 @@ Sideshow.registerWizard({
     steps: [
     	{
     	    title: "Boas vindas",
-    	    text: "Esta é uma apresentação passo a passo da página 'Galeria'. Todo o conteúdo visto (imagens, textos, nomes de link, etc) é meramente ilustrativo, apenas a estrutura conta. Algumas das seções são baseadas em conversas anteriores e no conteúdo do site atual (milenamarquesfotografia.com.br). Outras seções servem como sugestão. Todo o conteúdo das seções desta página é passível de mudança. \n\n A estrutura e orçamento do site está seguindo o que foi acordado anteriormente por email com Anfrísio Rocha. Caso haja necessidade alterar a estrutura, será feita uma nova análise para orçamento. \n\n Para passar para o próximo passo, basta clicar em Continuar ou Fechar (no canto direito inferior desta apresentação) se desejar parar.",
+    	    text: "Esta é uma apresentação passo a passo da página 'Galeria'. Todo o conteúdo visto (imagens, textos, nomes de link, etc) é meramente ilustrativo, apenas a estrutura conta. Algumas das seções são baseadas em conversas anteriores e no conteúdo do site atual (milenamarquesfotografia.com.br). Outras seções servem como sugestão. Todo o conteúdo das seções desta página é passível de mudança. \n\n A estrutura e orçamento do site está seguindo o que foi acordado anteriormente por email com Anfrísio Rocha. Caso haja necessidade alterar a estrutura, será feita uma nova análise para orçamento. \n\n Aproveite para explorar um pouco a página após o término da apresentação. \n\n Para passar para o próximo passo, basta clicar em Continuar ou Fechar (no canto direito inferior desta apresentação) se desejar parar.",
     	    format: "markdown"
     	},
 		{
@@ -33,7 +33,7 @@ Sideshow.registerWizard({
 		},
         {
 		    title: "Galeria de Fotos",
-		    text: "Aqui encontram-se as imagens referentes ao tipo de álbum escolhido. O tipo de álbum, será mostrado mais adiante. \n\n Cada imagem pode ser ampliada com um clique do mouse. Pode haver até 9 imagens neste painel.",
+		    text: "Aqui encontram-se as imagens e suas respectivas legendas referentes ao tipo de álbum escolhido. O tipo de álbum será mostrado mais adiante. \n\n Cada imagem pode ser ampliada com um clique do mouse. Ao findar a apresentação, clique em uma das imagens para ver como ocorre a ampliação. A ampliação se dará de acordo com o tamanho e resolução da foto ampliada. \n\n Pode haver até 9 imagens neste painel.",
 		    subject: "section.two-column .col-md-9 ul li:first",
             format: "markdown",
 		    lockSubject: true
@@ -52,7 +52,7 @@ Sideshow.registerWizard({
 		},
         {
             title: "Fim - Próxima Página",
-            text: "Ok. Os demais itens da página já são conhecidos. Vamos agora para a próxima página: 'Contato'. \n\n No menu principal, clique em 'Contato' após encerrar esta apresentação.",
+            text: "Ok. Os demais itens da página já são conhecidos. Vamos agora para a próxima página: 'Contato'. \n\n Ao terminar esta apresentação, você pode clicar em uma das imagens para ver o funcionamento da ampliação de imagens. \n\n Após explorar, para continuar com a apresentação das demais páginas, vá ao menu principal, clique em 'Contato' após encerrar esta apresentação e veja a sua apresentação.",
             format: "markdown"
         }
     ]

@@ -19,7 +19,7 @@ Sideshow.registerWizard({
     steps: [
     	{
     	    title: "Boas vindas",
-    	    text: "Esta é uma apresentação passo a passo da página 'Serviços'. Todo o conteúdo visto (imagens, textos, nomes de link, etc) é meramente ilustrativo, apenas a estrutura conta. Algumas das seções são baseadas em conversas anteriores e no conteúdo do site atual (milenamarquesfotografia.com.br). Outras seções servem como sugestão. Todo o conteúdo das seções desta página é passível de mudança. \n\n A estrutura e orçamento do site está seguindo o que foi acordado anteriormente por email com Anfrísio Rocha. Caso haja necessidade alterar a estrutura, será feita uma nova análise para orçamento. \n\n Para passar para o próximo passo, basta clicar em Continuar ou Fechar (no canto direito inferior desta apresentação) se desejar parar.",
+    	    text: "Esta é uma apresentação passo a passo da página 'Galeria'. Todo o conteúdo visto (imagens, textos, nomes de link, etc) é meramente ilustrativo, apenas a estrutura conta. Algumas das seções são baseadas em conversas anteriores e no conteúdo do site atual (milenamarquesfotografia.com.br). Outras seções servem como sugestão. Todo o conteúdo das seções desta página é passível de mudança. \n\n A estrutura e orçamento do site está seguindo o que foi acordado anteriormente por email com Anfrísio Rocha. Caso haja necessidade alterar a estrutura, será feita uma nova análise para orçamento. \n\n Aproveite para explorar um pouco a página após o término da apresentação. \n\n Para passar para o próximo passo, basta clicar em Continuar ou Fechar (no canto direito inferior desta apresentação) se desejar parar.",
     	    format: "markdown"
     	},
 		{
@@ -32,14 +32,14 @@ Sideshow.registerWizard({
 		    subject: ".heading"
 		},
 		{
-		    title: "Serviços e Produtos",
+		    title: "Produtos e Serviços",
 		    text: "Aqui encontram-se 3 links que direcionarão para a página 'Galeria' de acordo com o conteúdo de cada uma. O derecionamento acontece quando o usuário clica em 'Veja Mais'",
 		    subject: ".categories-page .row",
 		    targets: ".categories-page .row .col-md-4 .btn-view",
 		    lockSubject: true
 		},
 		{
-		    title: "Serviços e Produtos - Preview",
+		    title: "Produtos e Serviços - Preview",
 		    text: "É possível ver um preview (imagens) da seção em questão clicando nas bolinhas azuis. \n\n Antes de continuar, clique na segunda ou terceira bolinha para visualizar outras imagens.",
 		    subject: ".categories-page .row .col-md-4:first",
 		    targets: ".categories-page .row .col-md-4:first .bx-default-pager",
