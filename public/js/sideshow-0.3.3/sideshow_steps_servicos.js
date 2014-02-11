@@ -33,7 +33,7 @@ Sideshow.registerWizard({
 		},
 		{
 		    title: "Serviços e Produtos",
-		    text: "Aqui se encontram 3 links que direcionarão para a página 'Galeria' de acordo com o conteúdo de cada uma. O derecionamento acontece quando o usuário clica em 'Veja Mais'",
+		    text: "Aqui encontram-se 3 links que direcionarão para a página 'Galeria' de acordo com o conteúdo de cada uma. O derecionamento acontece quando o usuário clica em 'Veja Mais'",
 		    subject: ".categories-page .row",
 		    targets: ".categories-page .row .col-md-4 .btn-view",
 		    lockSubject: true
